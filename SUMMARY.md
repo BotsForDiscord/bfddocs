@@ -9,8 +9,8 @@
 
 ## Methods
 
-* [Bots](methods/bots.md)
 * [Users](methods/users.md)
+* [Bots](methods/bots.md)
 
 ## Webhooks
 
