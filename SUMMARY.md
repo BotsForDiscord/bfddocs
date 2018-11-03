@@ -1,4 +1,14 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Welcome](README.md)
+* [Change Logs](change-logs.md)
+
+## Introduction
+
+* [Reference](intro/reference.md)
+
+## Methods
+
+* [Bots](methods/bots.md)
+* [Users](methods/users.md)
 
