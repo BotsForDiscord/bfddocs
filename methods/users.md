@@ -44,7 +44,7 @@ The content of this response varies.
 The user you are requesting does not exist on the website.
 {% endapi-method-response-example-description %}
 
-```text
+```javascript
 { message: 'User not found.' }
 ```
 {% endapi-method-response-example %}
@@ -86,11 +86,11 @@ The content of this response varies.
 You may receive of the following 404 errors depending on your situation.
 {% endapi-method-response-example-description %}
 
-```text
-The user you are requesting does not exist on the website:
+```javascript
+//The user you are requesting does not exist on the website:
 { message: 'User not found.' }
 
-The user you are requesting does not own any bots on the website:
+//The user you are requesting does not own any bots on the website:
 { bots: 'User has no bots.' }
 ```
 {% endapi-method-response-example %}
