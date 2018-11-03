@@ -34,7 +34,7 @@ The ID of the user you are requesting information on.
 The server has located the users information and displayed it.
 {% endapi-method-response-example-description %}
 
-```
+```text
 The content of this response varies.
 ```
 {% endapi-method-response-example %}
@@ -44,7 +44,7 @@ The content of this response varies.
 The user you are requesting does not exist on the website.
 {% endapi-method-response-example-description %}
 
-```
+```text
 { message: 'User not found.' }
 ```
 {% endapi-method-response-example %}
@@ -76,7 +76,7 @@ The ID of the user you are requesting information on.
 The server has located information about the user's bots and displayed it.
 {% endapi-method-response-example-description %}
 
-```
+```text
 The content of this response varies.
 ```
 {% endapi-method-response-example %}
@@ -86,7 +86,7 @@ The content of this response varies.
 You may receive of the following 404 errors depending on your situation.
 {% endapi-method-response-example-description %}
 
-```
+```text
 The user you are requesting does not exist on the website:
 { message: 'User not found.' }
 

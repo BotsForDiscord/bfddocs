@@ -34,7 +34,7 @@ The ID of the bot you are requesting information on.
 The website was successfully able to fetch information about the bot.
 {% endapi-method-response-example-description %}
 
-```
+```text
 The content of this response varies.
 ```
 {% endapi-method-response-example %}
@@ -44,15 +44,13 @@ The content of this response varies.
 The bot you requested is not listed on the website.
 {% endapi-method-response-example-description %}
 
-```
+```text
 {"message":"Bot not found."}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-#### 
 
 {% api-method method="get" host="https://botsfordiscord.com/api" path="/bot/:id/widget" %}
 {% api-method-summary %}
@@ -72,11 +70,11 @@ The ID of the bot you are requesting information on.
 {% endapi-method-path-parameters %}
 
 {% api-method-query-parameters %}
-{% api-method-parameter name="height" type="integer" required=false %}
+{% api-method-parameter name="height" type="number" required=false %}
 Set the height of the widget.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="width" type="integer" required=false %}
+{% api-method-parameter name="width" type="number" required=false %}
 Set the width of the widget
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
@@ -88,7 +86,7 @@ Set the width of the widget
 The website was successfully able to fetch and display the bot's widget.
 {% endapi-method-response-example-description %}
 
-```
+```text
 The content of this response varies.
 ```
 {% endapi-method-response-example %}
@@ -98,7 +96,7 @@ The content of this response varies.
 The bot you requested is not listed on the website.
 {% endapi-method-response-example-description %}
 
-```
+```text
 {"message":"Bot not found."}
 ```
 {% endapi-method-response-example %}
@@ -124,7 +122,7 @@ The ID of the bot you are posting information about.
 {% endapi-method-path-parameters %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="server\_count" type="integer" required=true %}
+{% api-method-parameter name="server\_count" type="number" required=true %}
 The server count for the bot.
 {% endapi-method-parameter %}
 
@@ -141,10 +139,10 @@ The bot's API token.
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
- Server count was successfully received and updated.
+Server count was successfully received and updated.
 {% endapi-method-response-example-description %}
 
-```
+```text
 { message: 'Server count successfully updated.' }
 ```
 {% endapi-method-response-example %}
@@ -154,7 +152,7 @@ The bot's API token.
 You may receive one of the following 400 errors depending on your situation.
 {% endapi-method-response-example-description %}
 
-```
+```text
 You did not provide any bot token:
 { message: 'Authorization is required.' }
 
@@ -174,7 +172,7 @@ The token you provided does not match the bot's token:
 The bot you are trying to post information on is not listed.
 {% endapi-method-response-example-description %}
 
-```
+```text
 { message: 'Invalid bot.' }
 ```
 {% endapi-method-response-example %}

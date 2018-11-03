@@ -5,10 +5,15 @@
 
 ## Introduction
 
-* [Reference](intro/reference.md)
+* [Reference](introduction/reference.md)
 
 ## Methods
 
 * [Bots](methods/bots.md)
 * [Users](methods/users.md)
+
+## Webhooks
+
+* [Testing](webhooks/testing.md)
+* [Receiving Votes](webhooks/receiving-votes.md)
 

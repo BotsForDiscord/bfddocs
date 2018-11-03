@@ -6,5 +6,3 @@ description: Changes made to our API will be posted here.
 
 ## None have been made since this pages creation!
 
-
-
