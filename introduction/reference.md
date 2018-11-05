@@ -3,7 +3,7 @@
 ## Information
 
 * All requests \(GET or POST\) use JSON
-* If you are sending POST requests make sure to set Content-Type: application/json
+* If you are sending POST requests make sure to set ``Content-Type: application/json``
 
 ## Base Url
 
