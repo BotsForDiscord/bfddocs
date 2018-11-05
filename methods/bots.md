@@ -116,7 +116,7 @@ Update your bot's server count on the website. Authorization is required!
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="id" type="integer" required=false %}
+{% api-method-parameter name="id" type="integer" required=true %}
 The ID of the bot you are posting information about.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
