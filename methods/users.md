@@ -7,12 +7,12 @@ description: Methods used retrieve info about users.
 ## Base Url
 
 ```text
-https://botsfordiscord.com/api
+https://botsfordiscord.com/ap
 ```
 
 {% api-method method="get" host="https://botsfordiscord.com" path="/api/user/:id" %}
 {% api-method-summary %}
-GET /user/:id
+user info
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -54,7 +54,7 @@ The user you are requesting does not exist on the website.
 
 {% api-method method="get" host="https://botsfordiscord.com" path="/api/user/:id/bots" %}
 {% api-method-summary %}
-GET /user/:id/bots
+user bots
 {% endapi-method-summary %}
 
 {% api-method-description %}

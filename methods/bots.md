@@ -12,7 +12,7 @@ https://botsfordiscord.com/api
 
 {% api-method method="get" host="https://botsfordiscord.com/api" path="/bot/:id" %}
 {% api-method-summary %}
-GET /bot/:id
+bot info
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -45,7 +45,7 @@ The bot you requested is not listed on the website.
 {% endapi-method-response-example-description %}
 
 ```text
-{"message":"Bot not found."}
+{"message":"Bot not fo
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -54,7 +54,7 @@ The bot you requested is not listed on the website.
 
 {% api-method method="get" host="https://botsfordiscord.com/api" path="/bot/:id/widget" %}
 {% api-method-summary %}
-GET /bot/:id/widget
+bot widget
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -106,7 +106,7 @@ The bot you requested is not listed on the website.
 
 {% api-method method="post" host="https://botsfordiscord.com/api" path="/bot/:id" %}
 {% api-method-summary %}
-POST /bot/:id
+bot stats
 {% endapi-method-summary %}
 
 {% api-method-description %}
