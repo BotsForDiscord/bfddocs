@@ -121,17 +121,19 @@ The ID of the bot you are posting information about.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="server\_count" type="number" required=true %}
-The server count for the bot.
-{% endapi-method-parameter %}
-
+{% api-method-headers %}
 {% api-method-parameter name="Content-Type" type="string" required=true %}
 This should be set to application/json
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="Authorization" type="string" required=true %}
 The bot's API token.
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
+{% api-method-body-parameters %}
+{% api-method-parameter name="server\_count" type="number" required=true %}
+The server count for the bot.
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
