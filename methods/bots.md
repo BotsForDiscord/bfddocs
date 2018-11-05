@@ -44,8 +44,8 @@ The content of this response varies.
 The bot you requested is not listed on the website.
 {% endapi-method-response-example-description %}
 
-```text
-{"message":"Bot not fo
+```javascript
+{"message":"Bot not found"}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -96,7 +96,7 @@ The content of this response varies.
 The bot you requested is not listed on the website.
 {% endapi-method-response-example-description %}
 
-```text
+```javascript
 {"message":"Bot not found."}
 ```
 {% endapi-method-response-example %}
@@ -144,7 +144,7 @@ The server count for the bot.
 Server count was successfully received and updated.
 {% endapi-method-response-example-description %}
 
-```text
+```javascript
 { message: 'Server count successfully updated.' }
 ```
 {% endapi-method-response-example %}
@@ -154,17 +154,17 @@ Server count was successfully received and updated.
 You may receive one of the following 400 errors depending on your situation.
 {% endapi-method-response-example-description %}
 
-```text
-You did not provide any bot token:
+```javascript
+//You did not provide any bot token:
 { message: 'Authorization is required.' }
 
-You did not provide any server count:
+//You did not provide any server count:
 { message: 'Server count is required.' }
 
-The server count you provided was not a valid number:
+//The server count you provided was not a valid number:
 { message: 'Server count must be a valid number.' }
 
-The token you provided does not match the bot's token:
+//The token you provided does not match the bot's token:
 { message: 'Invalid authorization token.' }
 ```
 {% endapi-method-response-example %}
@@ -174,7 +174,7 @@ The token you provided does not match the bot's token:
 The bot you are trying to post information on is not listed.
 {% endapi-method-response-example-description %}
 
-```text
+```javascript
 { message: 'Invalid bot.' }
 ```
 {% endapi-method-response-example %}
