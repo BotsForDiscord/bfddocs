@@ -7,7 +7,7 @@ description: Methods used retrieve info about users.
 ## Base Url
 
 ```text
-https://botsfordiscord.com/ap
+https://botsfordiscord.com/api
 ```
 
 {% api-method method="get" host="https://botsfordiscord.com" path="/api/user/:id" %}
