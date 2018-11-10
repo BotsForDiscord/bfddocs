@@ -70,8 +70,8 @@ The ID of the bot you are requesting information on.
 {% endapi-method-path-parameters %}
 
 {% api-method-query-parameters %}
-{% api-method-parameter name="height" type="number" required=false %}
-Set the height of the widget.
+{% api-method-parameter name="theme" type="string" required=false %}
+Set this to dark for a dark themed widget
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="width" type="number" required=false %}
