@@ -45,7 +45,75 @@ The bot you requested is not listed on the website.
 {% endapi-method-response-example-description %}
 
 ```javascript
-{"message":"Bot not found"}
+{"message":"Bot not found."}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+{% api-method method="get" host="https://botsfordiscord.com/api" path="/bot/:id/votes" %}
+{% api-method-summary %}
+bot votes
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Obtain JSON encoded voting information about a bot you own, without the necessity of webhooks.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="id" type="integer" required=true %}
+The ID of the bot you are requesting voting information on.
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+The bot's API token.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="Content-Type" type="string" required=true %}
+This should be set to application/json
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+The website was successfully able to fetch information about the bot.
+{% endapi-method-response-example-description %}
+
+```
+{
+    "hasVoted": [],
+    "hasVoted24": [],
+    "votes": 0,
+    "votes24": 0,
+    "votesMonth": 0
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=400 %}
+{% api-method-response-example-description %}
+You provided the wrong API token for the bot.
+{% endapi-method-response-example-description %}
+
+```
+{"message":"Invalid authorization token."}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=404 %}
+{% api-method-response-example-description %}
+The bot you requested is not listed on the website.
+{% endapi-method-response-example-description %}
+
+```
+{"message":"Bot not found."}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
